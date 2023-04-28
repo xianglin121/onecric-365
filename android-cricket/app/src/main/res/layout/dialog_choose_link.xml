@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/shape_white_25dp_half_rec"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_all_live"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/image_onecric"
+            android:drawablePadding="@dimen/dp_4"
+            android:fontFamily="@font/noto_sans_display_semibold"
+            android:text="OneCric"
+            android:textColor="@color/c_333333"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_onecric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/selector_agree"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_author_live"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/noto_sans_display_semibold"
+            android:text="Fancode"
+            android:textColor="@color/c_333333"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_fancode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/selector_agree"
+            android:fontFamily="@font/noto_sans_display_semibold"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_match_live"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/noto_sans_display_semibold"
+            android:text="CricBuzz"
+            android:textColor="@color/c_333333"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_cbz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/selector_agree"
+            android:fontFamily="@font/noto_sans_display_semibold"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</LinearLayout>

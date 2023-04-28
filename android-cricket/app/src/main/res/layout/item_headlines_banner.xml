@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:foreground="@drawable/selector_foreground_white"
+        android:background="@drawable/shape_team_bg">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rl_cover"
+            android:layout_width="match_parent"
+            android:layout_height="115dp">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:scaleType="fitXY"
+                android:foreground="@drawable/shape_gradient"
+                android:src="@mipmap/team_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_home_logo_big"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_away_logo_big"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_bg_80black_rect"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="1dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:visibility="gone"
+            tools:text="20 m 10 s" />
+
+        <ImageView
+            android:id="@+id/iv_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/unsubscribe"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rl_cover"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            tools:text="T20 World Cup,Women,Warm-Up" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/c_111111"
+            android:textSize="11sp"
+            tools:text="Match Starts at 10:30 PM" />
+
+        <ImageView
+            android:id="@+id/iv_watch_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-8dp"
+            android:src="@mipmap/icon_live_btn" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_watch_live"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_live_vs" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_home_logo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/rl_cover"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/img_team_logo_default" />
+
+        <TextView
+            android:id="@+id/tv_home_name"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_cover"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/iv_home_logo"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/c_111111"
+            android:textSize="13sp"
+            tools:text="Worid Glants Glants" />
+
+        <TextView
+            android:id="@+id/tv_home_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_home_name"
+            android:layout_alignLeft="@+id/tv_home_name"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/c_111111"
+            android:textSize="11sp"
+            tools:text="159/5" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_away_logo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/rl_cover"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/img_team_logo_default" />
+
+        <TextView
+            android:id="@+id/tv_away_name"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_cover"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@+id/iv_away_logo"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:maxLines="1"
+            android:textColor="@color/c_111111"
+            android:textSize="13sp"
+            tools:text="Asla lins Asla lins" />
+
+        <TextView
+            android:id="@+id/tv_away_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_away_name"
+            android:layout_alignRight="@+id/tv_away_name"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/c_111111"
+            android:textSize="11sp"
+            tools:text="159/5" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/watch_tip"
+        android:textColor="@color/c_111111"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_onecric"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/selector_foreground_white"
+            android:src="@mipmap/onecric" />
+
+
+        <ImageView
+            android:id="@+id/iv_fancode"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/selector_foreground_white"
+            android:src="@mipmap/fc" />
+
+        <ImageView
+            android:id="@+id/iv_circbuzz"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/selector_foreground_white"
+            android:src="@mipmap/cb" />
+    </LinearLayout>
+
+</LinearLayout>

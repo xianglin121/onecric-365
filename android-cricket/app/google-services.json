@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "416654911520",
+    "project_id": "cricketlive365-fe00c",
+    "storage_bucket": "cricketlive365-fe00c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416654911520:android:6ce873bd15ac8858e63445",
+        "android_client_info": {
+          "package_name": "com.onecric.CricketLive365"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416654911520-fl1reifhoasc9p710l7hr05lfgq1hrer.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVNrcwVcfogLZe31bxuofvK74ZVJ0ekEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416654911520-fl1reifhoasc9p710l7hr05lfgq1hrer.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
